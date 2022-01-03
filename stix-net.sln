@@ -7,7 +7,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1CF3E087-68E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{20D9F1FB-4355-47F2-8190-214996B1229B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StixNet", "Src\StixNet\StixNet.csproj", "{E9B5B814-C211-4CAD-B91A-B3E946AC6CA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StixNet", "Src\StixNet\StixNet.csproj", "{E9B5B814-C211-4CAD-B91A-B3E946AC6CA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBC8040B-A2C2-4772-9E4E-270EE2082552}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StixNet.Tests", "Tests\StixNet.Tests\StixNet.Tests.csproj", "{F80E6671-5AD2-4C22-A355-5088ADA773AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +26,17 @@ Global
 		{E9B5B814-C211-4CAD-B91A-B3E946AC6CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9B5B814-C211-4CAD-B91A-B3E946AC6CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9B5B814-C211-4CAD-B91A-B3E946AC6CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F80E6671-5AD2-4C22-A355-5088ADA773AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80E6671-5AD2-4C22-A355-5088ADA773AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80E6671-5AD2-4C22-A355-5088ADA773AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80E6671-5AD2-4C22-A355-5088ADA773AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E9B5B814-C211-4CAD-B91A-B3E946AC6CA0} = {1CF3E087-68E4-4D26-8980-6CF3A615EF2D}
+		{F80E6671-5AD2-4C22-A355-5088ADA773AD} = {20D9F1FB-4355-47F2-8190-214996B1229B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D09DB6C-7E8D-418C-AA15-6AC8C09B65C8}
