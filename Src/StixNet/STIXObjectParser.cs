@@ -22,9 +22,7 @@ public static class STIXObjectParser
         try
         {
             res = ParseSTIXObject(ToValidJson(jsonStr));
-            if(res is null)
-                return false;
-            return true;
+            return res is not null;
         }
         catch 
         {
@@ -37,9 +35,7 @@ public static class STIXObjectParser
         try
         {
             res = ParseBundleObject(ToValidJson(jsonStr));
-            if(res is null)
-                return false;
-            return true;
+            return res is not null;
         }
         catch 
         {
