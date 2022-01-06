@@ -1,6 +1,7 @@
 using System.IO;
 
-using StixNet.Base;
+using StixNet.Schemas;
+using StixNet.Schemas.Common;
 
 using Xunit;
 

@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-using StixNet.Base;
+using StixNet.Schemas;
+using StixNet.Schemas.Common;
 
 namespace StixNet.Helpers
 {

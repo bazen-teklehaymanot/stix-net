@@ -1,8 +1,7 @@
-﻿using System.Text.RegularExpressions;
+﻿using Newtonsoft.Json;
 
-using Newtonsoft.Json;
-
-using StixNet.Base;
+using StixNet.Schemas;
+using StixNet.Schemas.Common;
 using StixNet.Helpers;
 
 namespace StixNet;
