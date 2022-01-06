@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.RegularExpressions;
+
+using Newtonsoft.Json;
 
 using StixNet.Base;
 using StixNet.Helpers;
@@ -20,7 +22,7 @@ public static class STIXObjectParser
         res = null;
         try
         {
-            res = ParseSTIXObject(jsonStr);
+            res = ParseSTIXObject(ToValidJson(jsonStr));
             if(res is null)
                 return false;
             return true;
@@ -35,7 +37,7 @@ public static class STIXObjectParser
         res = null;
         try
         {
-            res = ParseBundleObject(jsonStr);
+            res = ParseBundleObject(ToValidJson(jsonStr));
             if(res is null)
                 return false;
             return true;
@@ -44,5 +46,10 @@ public static class STIXObjectParser
         {
             return false;
         }
+    }
+
+    private static string ToValidJson(string stix) 
+    {
+        return new STIXInputNormalizer(stix).Json;
     }
 }
